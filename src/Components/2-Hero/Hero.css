@@ -1,0 +1,96 @@
+/* ======================
+
+===== left-section====
+
+
+========================
+*/
+
+section.hero {
+  margin-top: 1.4rem;
+  justify-content: space-between;
+}
+
+section.hero .left-section .avatar {
+  align-items: end;
+}
+
+section.hero .left-section .avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgb(233, 228, 228);
+  padding: 1px;
+  box-shadow: 1px 1px 40px rgb(252, 248, 248) inset;
+}
+
+section.hero .left-section .avatar .icon-veri {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--blue);
+}
+section.hero .left-section .avatar .icon-veri:hover {
+  font-size: 1.3rem;
+}
+section.hero .left-section h1 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+section.hero .left-section p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+section.hero .left-section .icon-comuncation {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  gap: 1rem;
+  font-size: 20px;
+}
+section.hero .left-section .icon-comuncation .comuncation {
+  cursor: pointer;
+}
+section.hero .right-section {
+  width: 100%;
+  translate: 100px 40px;
+}
+@media (max-width: 1200px) {
+  .right-section {
+    display: none;
+  }
+  section.hero .left-section {
+    width: 80%;
+  }
+}
+@media (max-width: 750px) {
+  section.hero .left-section h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  section.hero .left-section p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+  section.hero .left-section .icon-comuncation {
+    font-size: 17px;
+  }
+}
+@media (max-width: 500px) {
+  section.hero .left-section h1 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  section.hero .left-section p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+    width: 100%;
+  }
+  section.hero .left-section .icon-comuncation {
+    font-size: 14px;
+  }
+  section.hero .left-section .avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+}

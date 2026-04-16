@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary: #fff;
+  --secondary: rgb(24, 24, 27);
+  --border: rgba(63, 63, 70, 0.4);
+  --title: rgb(244, 244, 245);
+  --subtitle: rgb(161, 161, 170);
+  --bgheader: rgb(39, 39, 42);
+  --blue: rgb(93, 188, 252);
+  --icon-hover: #d4d4d8;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.light {
+  --primary: rgb(250, 250, 250);
+  --secondary: rgb(255, 255, 255);
+  --border: rgba(202, 202, 202, 0.518);
+
+  --title: rgb(39 39 42);
+  --subtitle: rgb(82 82 91);
+
+  --bgheader: rgb(253, 253, 253);
+  --blue: rgb(0, 149, 246);
+
+  --icon-hover: #333;
+}
+body {
+  background-color: var(--primary);
+  font-family: "Roboto", sans-serif;
+  color: var(--title);
+}
+.container {
+  border: 5px solid var(--border);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary);
+  padding: 0 3.6rem;
+}
+.divider {
+  border-bottom: 1px solid var(--border);
+  margin: 3rem 0;
+  width: calc(100% + 3.6rem + 3.6rem);
+  margin-left: -3.6rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.flex {
+  display: flex;
+}
+button {
+  all: unset;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  scale: 0.9;
+}
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+button.buttonToTop {
+  position: fixed;
+  height: 2.6rem;
+  width: 2.6rem;
+  bottom: 4%;
+  color: #fff;
+  right: 5%;
+  background-color: rgba(25, 118, 210, 0.85);
+  text-align: center;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+button.buttonToTop:hover {
+  background-color: rgb(25, 118, 210);
+}
+.whatsapp-container {
+  position: fixed;
+  bottom: 20%;
+  right: 15%;
+}
+button.buttonwatsapp {
+  height: 2.6rem;
+  width: 2.6rem;
+  bottom: 20%;
+  right: 15%;
+  background-color: rgb(8, 233, 1);
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+button.buttonwatsapp:hover {
+  font-size: 40px;
+}
+.tooltip {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+
+.whatsapp-container:hover .tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  button.buttonToTop {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+@media (max-width: 1040px) {
+  .container {
+    width: 90%;
+  }
+}

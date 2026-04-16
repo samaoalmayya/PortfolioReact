@@ -1,0 +1,103 @@
+section.contact_Section .icon-mail {
+  color: var(--subtitle);
+  margin-right: 1.1rem;
+  font-size: 35px;
+}
+section.contact_Section h1 {
+  font-size: 40px;
+}
+section.contact_Section p {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 13px;
+  line-height: 1.5;
+}
+/* section.contact_Section form {
+} */
+section.contact_Section #email,
+section.contact_Section #text {
+  all: unset;
+  margin-left: 2rem;
+  border: 1px solid rgb(63, 63, 70);
+  background-color: rgba(63, 63, 70, 0.15);
+  width: 16rem;
+  padding: 0.3rem 1rem;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+section.contact_Section #email:focus,
+section.contact_Section #text:focus {
+  border: 1px solid rgb(45, 212, 191);
+}
+section.contact_Section #email:hover,
+section.contact_Section #text:hover {
+  border: 1px solid rgb(45, 212, 191);
+}
+section.contact_Section #text {
+  min-height: 8.5rem;
+  resize: vertical;
+}
+section.contact_Section button {
+  margin-top: 0.5rem;
+  background-color: var(--bgheader);
+  padding: 0.5rem 0;
+  width: 7rem;
+  border: 1px solid var(--border);
+  text-align: center;
+  font-size: 1.03rem;
+  letter-spacing: 1.2px;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+section.contact_Section button:hover {
+  border: 1px solid rgb(45, 212, 191);
+  scale: 0.98;
+}
+section.contact_Section #email:hover,
+section.contact_Section #text:hover {
+  border: 1px solid rgb(45, 212, 191);
+}
+.animation {
+  width: 45%;
+  translate: 50px -20px;
+}
+.animation .Lottie {
+  height: 80%;
+}
+/* ///////////////////////////////////////////
+media query
+/////////////////////////////////////////// */
+@media (max-width: 1200px) {
+  .animation {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  section.contact_Section div.flex {
+    flex-direction: column;
+    align-items: start;
+  }
+  section.contact_Section #email,
+  section.contact_Section #text {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  section.contact_Section div.animation {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  section.contact_Section #email,
+  section.contact_Section #text {
+    width: 14rem;
+  }
+  section.contact_Section button {
+    width: 4rem;
+    align-self: center;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  section.contact_Section form {
+    margin-top: 20px;
+  }
+}

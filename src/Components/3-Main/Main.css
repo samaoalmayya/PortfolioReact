@@ -1,0 +1,124 @@
+main {
+  gap: 1.3rem;
+}
+
+/* 
+   ========================================
+   ========================================
+   css left-section 
+   ========================================
+   ========================================
+   */
+
+main section.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main section.left-section button {
+  background-color: rgba(36, 37, 46, 1);
+  color: var(--primary);
+  padding: 0.7rem 0;
+  width: 11rem;
+  border: 1px solid var(--border);
+  text-align: center;
+  font-size: 1.05rem;
+  opacity: 50%;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+main section.left-section button.active {
+  border: 1px solid var(--blue);
+  cursor: pointer;
+  opacity: 1;
+}
+main section.left-section button:hover {
+  opacity: 1;
+}
+.light main section.left-section.flex button.active {
+  border: 1px solid #000;
+}
+
+/* 
+   ========================================
+   ========================================
+   css right-section 
+   ========================================
+   ========================================
+   */
+main section.right-section {
+  flex-wrap: wrap;
+  gap: 15px;
+  transition: 1s;
+  justify-content: center;
+}
+main section.right-section article {
+  width: 240px;
+  border: 1px solid rgb(93, 188, 255, 0.3);
+  border-radius: 5px;
+  transition: 0.2s;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+}
+
+main section.right-section article:hover {
+  cursor: pointer;
+  border: 1px solid var(--blue);
+  rotate: 1deg;
+  scale: 1.01;
+}
+main section.right-section article .CardTitle {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+main section.right-section article .CardTitle p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: small;
+  opacity: 0.5;
+}
+main section.right-section article img {
+  border-radius: 5px;
+}
+main section.right-section article .box {
+  justify-content: space-between;
+  padding: 7px 5px;
+}
+main section.right-section article .box a {
+  color: var(--blue);
+}
+main section.right-section article .box a span {
+  font-size: 13px;
+}
+/* 
+   ========================================
+   ========================================
+   css query media
+   ========================================
+   ========================================
+   */
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    gap: 2.2rem;
+    align-items: center;
+  }
+  main section.left-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main section.left-section button {
+    width: 7rem;
+
+    text-align: center;
+    font-size: 13px;
+    opacity: 50%;
+    letter-spacing: 1.2px;
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+}
