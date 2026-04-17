@@ -119,6 +119,9 @@ header .icon-clear:hover {
   rotate: 180deg;
 }
 @media (max-width: 750px) {
+  header {
+    padding: 0rem 0rem;
+  }
   header nav {
     display: none;
   }

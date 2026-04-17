@@ -1,3 +1,10 @@
+import ECommerceWep from "../../image/ecomercejavasc.png";
+import Dashboard from "../../image/dashboard.png";
+import ECommercenode from "../../image/ecomuireact.png";
+import ECommerceReact from "../../image/ecomuireact.png";
+import ExpenseAccount from "../../image/moeny.png";
+import Medical from "../../image/taskDs.png";
+
 export const myprojectarr = [
   {
     id: 1,
@@ -5,7 +12,7 @@ export const myprojectarr = [
     hrefmore: "https://samaoalmayya.github.io/samoaalstotre/",
     projectTitle: "E-Commerce Wep",
     category: "css",
-    imgpath: "src/image/ecomerce javasc.png",
+    imgpath: ECommerceWep,
     Title:
       "Built with Html ,CSS ,JS and Bootstrap. User authentication, product page, adding and deleting products, saving",
   },
@@ -15,7 +22,7 @@ export const myprojectarr = [
     hrefmore: "https://github.com/samaoalmayya/",
     projectTitle: "Dashboard",
     category: "React",
-    imgpath: "src/image/dashboard.png",
+    imgpath: Dashboard,
     Title:
       "Built with React JS and Material UI. Features: Dark Mode, insert pages, add and delete data  , filter data and many other features. ",
   },
@@ -25,7 +32,7 @@ export const myprojectarr = [
     hrefmore: "https://github.com/samaoalmayya/",
     projectTitle: "E-Commerce Node ",
     category: "Node",
-    imgpath: "src/image/ecomuireact.png",
+    imgpath: ECommercenode,
     Title:
       "Built with Node JS and Mongo DB. Features Working with MongoDB database and sending data to display in front-end. ",
   },
@@ -35,7 +42,7 @@ export const myprojectarr = [
     hrefmore: "https://github.com/samaoalmayya/",
     projectTitle: "E-Commerce",
     category: "React",
-    imgpath: "src/image/ecomuireact.png",
+    imgpath: ECommerceReact,
     Title:
       "Built with React JS and Material UI. Features: Dark Mode, insert pages, add and delete and,Dealing with a real database ",
   },
@@ -45,7 +52,7 @@ export const myprojectarr = [
     hrefmore: "https://github.com/samaoalmayya/",
     projectTitle: "Expense account",
     category: "React",
-    imgpath: "src/image/moeny.png",
+    imgpath: ExpenseAccount,
     Title:
       "Built with React JS and Material UI.  Features: Dark Mode, Input Page, Add and Delete Expenses, Total Calculation, Save. ",
   },
@@ -55,7 +62,7 @@ export const myprojectarr = [
     hrefmore: "https://github.com/samaoalmayya/",
     projectTitle: "Medical-reservations",
     category: "React",
-    imgpath: "src/image/taskDs.png",
+    imgpath: Medical,
     Title:
       " Built with React JS and Material UI. Features Isert pages, add and delete and,Dealing with a real database",
   },

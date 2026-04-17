@@ -3,6 +3,7 @@ import "./Hero.css";
 import Lottie, { useLottie } from "lottie-react";
 import heroanimation from "../../Animation/dev.code.json";
 import { useEffect } from "react";
+import Me from "../../image/itsme.png";
 const Hero = () => {
   const { View, setSpeed } = useLottie({
     animationData: heroanimation,
@@ -16,7 +17,7 @@ const Hero = () => {
     <section id="About" className="hero flex">
       <div className="left-section ">
         <div className="avatar flex">
-          <img src="src\image\itsme.png" alt="sssssssssssssssssssssssss" />
+          <img src={Me} alt="sssssssssssssssssssssssss" />
           <div className="icon-veri icon-verified"></div>
         </div>
         <h1>Software Engineer and Master’s Candidate in Web Science.</h1>
