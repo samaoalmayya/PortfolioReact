@@ -15,7 +15,8 @@ header nav {
   transition: 0.3s;
   display: block;
   box-shadow: 1px 1px 40px #2323242a;
-  /* width: 35%; */
+  width: 35%;
+  height: 20px;
 }
 header nav:hover {
   /* box-shadow: 1px 1px 10px var(--blue); */
