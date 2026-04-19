@@ -76,6 +76,7 @@ header .model {
   background-color: rgb(0, 0, 0);
   text-align: left;
   padding: 2rem 1rem;
+  color: aliceblue;
   border-radius: 10px;
   animation: mymove 1s 1;
 }
